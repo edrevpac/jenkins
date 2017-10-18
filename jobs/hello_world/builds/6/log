@@ -1,0 +1,63 @@
+Started by user [8mha:////4D3wUE+cey/IgChlCOMEsQDQBeSgELL4bsJehzHo5Yz2AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/hello_world
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/edrevpac/hello_world.git # timeout=10
+Fetching upstream changes from https://github.com/edrevpac/hello_world.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/edrevpac/hello_world.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 0179bef94e30d7a68af08b63e438472dd6fa7915 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 0179bef94e30d7a68af08b63e438472dd6fa7915
+Commit message: "hello"
+ > git rev-list 0179bef94e30d7a68af08b63e438472dd6fa7915 # timeout=10
+ > git tag -a -f -m Jenkins Build #6 jenkins-hello_world-6 # timeout=10
+[hello_world] $ /usr/share/maven/bin/mvn clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hello_world 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ hello_world ---
+[INFO] Deleting /var/lib/jenkins/workspace/hello_world/target
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello_world ---
+[8mha:////4CoRFPJoYDHpkSWTPAAunobBD8ZhjeoSCr6L5x1ClBxzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/hello_world/src/main/resources
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ hello_world ---
+[INFO] Changes detected - recompiling the module!
+[8mha:////4CoRFPJoYDHpkSWTPAAunobBD8ZhjeoSCr6L5x1ClBxzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to /var/lib/jenkins/workspace/hello_world/target/classes
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello_world ---
+[8mha:////4CoRFPJoYDHpkSWTPAAunobBD8ZhjeoSCr6L5x1ClBxzAAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/hello_world/src/test/resources
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ hello_world ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.17:test (default-test) @ hello_world ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:////4AtCTtlGlUr191eqyfOTtM4ZRSyQAEb8MFtZGY7bgev/AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:3.0.0:war (default-war) @ hello_world ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [hello_world] in [/var/lib/jenkins/workspace/hello_world/target/hello_world-0.0.1-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/lib/jenkins/workspace/hello_world/WebContent]
+[INFO] Webapp assembled in [92 msecs]
+[INFO] Building war: /var/lib/jenkins/workspace/hello_world/target/hello_world-0.0.1-SNAPSHOT.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.205 s
+[INFO] Finished at: 2017-10-18T13:41:28+00:00
+[INFO] Final Memory: 13M/99M
+[INFO] ------------------------------------------------------------------------
+Deploying /var/lib/jenkins/workspace/hello_world/target/hello_world-0.0.1-SNAPSHOT.war to container Tomcat 8.x Remote with context 
+  [/var/lib/jenkins/workspace/hello_world/target/hello_world-0.0.1-SNAPSHOT.war] is not deployed. Doing a fresh deployment.
+  Deploying [/var/lib/jenkins/workspace/hello_world/target/hello_world-0.0.1-SNAPSHOT.war]
+Finished: SUCCESS
