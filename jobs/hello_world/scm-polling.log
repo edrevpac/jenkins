@@ -1,8 +1,0 @@
-Started on Oct 18, 2017 1:01:00 PM
-Using strategy: Default
-[poll] Last Built Revision: Revision 0179bef94e30d7a68af08b63e438472dd6fa7915 (refs/remotes/origin/master)
- > git ls-remote -h https://github.com/edrevpac/hello_world.git # timeout=10
-Found 2 remote heads on https://github.com/edrevpac/hello_world.git
-[poll] Latest remote head revision on refs/heads/master is: 0179bef94e30d7a68af08b63e438472dd6fa7915 - already built by 1
-Done. Took 0.82 sec
-No changes
